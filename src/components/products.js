@@ -1,7 +1,8 @@
-import product1 from "../assets/1.jpg";
-import product2 from "../assets/2.jpg";
-import product3 from "../assets/3.jpg";
-import product4 from "../assets/4.jpg";
+const product1 = '1.jpg';
+const product2 = '2.jpg';
+const product3 = '3.jpg';
+const product4 = '4.jpg';
+
 
 export const products = [
     {

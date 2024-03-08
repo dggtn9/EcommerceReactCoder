@@ -35,7 +35,7 @@ export const DetalleProducto = () => {
             <Layout>
                 <div className='w-full max-w-screen-lg'>
                     <button className='flex flex-grow items-center font-light' onClick={onNavigateBack}>
-                        <ChevronLeftIcon className='h-4 w-4 text-black'></ChevronLeftIcon> Return
+                        <ChevronLeftIcon className='h-4 w-4 text-black'></ChevronLeftIcon> Regresar
                     </button>
 
                     <div className='flex flex-column w-full mb-10 mt-10'>
@@ -78,7 +78,7 @@ export const DetalleProducto = () => {
                         <div className='w-1/6'>
                             <span className='text-red-800 text-2xl'>${context.showProductDetail.price}</span>
                             <p>Envio gratis!</p>
-                            <p className='text-xs mb-4'>Llega entre <span className='font-bold'>{deliveryDate(today, 'dd/mm/yy', 5)} and el {deliveryDate(today, 'dd/mm/yy', 10)}</span></p>
+                            <p className='text-xs mb-4'>Llega entre <span className='font-bold'>{deliveryDate(today, 'dd/mm/yy', 5)} y el {deliveryDate(today, 'dd/mm/yy', 10)}</span></p>
 
                             <button
                                 type='button'
