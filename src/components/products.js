@@ -1,7 +1,7 @@
-const product1 = '1.jpg';
-const product2 = '2.jpg';
-const product3 = '3.jpg';
-const product4 = '4.jpg';
+const product1 = '/1.jpg';
+const product2 = '/2.jpg';
+const product3 = '/3.jpg';
+const product4 = '/4.jpg';
 
 
 export const products = [
@@ -12,6 +12,7 @@ export const products = [
         category: 'Frutas Secas',
         description: 'Frutos deshidratadas saludables',
         images: product1,
+        brand: 'Dietetica Consciente',
         rate: 5,
         quantity: 100,
     },

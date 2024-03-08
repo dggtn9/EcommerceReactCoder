@@ -38,7 +38,7 @@ export const ProductDetail = () => {
             </div>
             <figure className='flex justify-center items-center px-6 relative'>
                 <img className='h-40 max-w-xs rounded-lg'
-                    src={context.showProductDetail?.images?.[0]}
+                    src={context.showProductDetail?.images}
                     alt={`image ${context.showProductDetail?.title}`}
                 />
             </figure>

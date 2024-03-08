@@ -29,10 +29,10 @@ export const CheckoutSideMenu = () => {
         context.setOrder([...context.order, orderToAdd]);
         context.setCartProducts([]);
         context.closeCheckoutSideMenu();
-        //context.setSearchByTitle(null);
+      
     }
 
-    //console.log(context.cartProducts[0].images[0])
+    
 
     return (
         <aside
@@ -80,7 +80,7 @@ export const CheckoutSideMenu = () => {
                             key={prod.id}
                             id={prod.id}
                             title={prod.title}
-                            imageUrl={prod.images[0]}
+                            imageUrl={prod.images}
                             price={prod.price}
                             handleDelete={handleDelete}
                         />

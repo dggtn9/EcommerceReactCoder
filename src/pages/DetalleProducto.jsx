@@ -17,7 +17,7 @@ export const DetalleProducto = () => {
     }
 
 
-    const [imagen, setImagen] = useState(context.showProductDetail.images[0]);
+    const [imagen, setImagen] = useState(context.showProductDetail.images);
     const cambiarImagen = (element) => {
         setImagen(element)
     }
@@ -44,10 +44,10 @@ export const DetalleProducto = () => {
                                 imagen !== undefined ?
                                     <img className='w-full h-60 object-contain' src={imagen} alt={`Image ${context.showProductDetail.title}`} />
                                     :
-                                    <img className='w-full h-60 object-contain' src={context.showProductDetail.images[0]} alt={`Image ${context.showProductDetail.title}`} />
+                                    <img className='w-full h-60 object-contain' src={context.showProductDetail.images} alt={`Image ${context.showProductDetail.title}`} />
                             }
                             <div className='flex flex-row justify-between w-4/12 mt-2'>
-                                <img className='border  mb-2 object-contain h-20 mr-2' src={context.showProductDetail.images[0]} alt={`Image ${context.showProductDetail.title}`} onClick={() => cambiarImagen(context.showProductDetail.images[0])} />
+                                <img className='border  mb-2 object-contain h-20 mr-2' src={context.showProductDetail.images} alt={`Image ${context.showProductDetail.title}`} onClick={() => cambiarImagen(context.showProductDetail.images)} />
                                 <img className='border  mb-2 object-contain h-20 mr-2' src={context.showProductDetail.images[1]} alt={`Image ${context.showProductDetail.title}`} onClick={() => cambiarImagen(context.showProductDetail.images[1])} />
                                 <img className='border mb-2 object-cover h-20' src={context.showProductDetail.images[2]} alt={`Image ${context.showProductDetail.title}`} onClick={() => cambiarImagen(context.showProductDetail.images[2])} />
                             </div>
