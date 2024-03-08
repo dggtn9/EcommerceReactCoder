@@ -7,28 +7,28 @@ const product4 = '4.jpg';
 export const products = [
     {
         id: '1',
-        title: 'Almendras',
+        title: 'Duraznos deshidratados',
         price: 5000,
         category: 'Frutas Secas',
-        description: 'Frutos secos saludables',
+        description: 'Frutos deshidratadas saludables',
         images: product1,
         rate: 5,
-        quantity: 100
+        quantity: 100,
     },
     {
         id: '2',
-        title: 'Leche de Almendras',
+        title: 'Pasas',
         price: 5000,
         category: 'Bebidas',
-        description: 'Leche de Frutos secos saludables',
+        description: 'Frutos secos saludables',
         images: product4,
         brand: 'Dietetica Consciente',
         rate: 5,
-        quantity: 100
+        quantity: 100,
     },
     {
         id: '3',
-        title: 'Canela',
+        title: 'Almendras',
         price: 5000,
         category: 'Especias',
         description: 'Frutos secos saludables',
@@ -39,7 +39,7 @@ export const products = [
     },
     {
         id: '4',
-        title: 'Queso crema de cabra',
+        title: 'Granola',
         price: 5000,
         category: 'Lacteos',
         description: 'Frutos secos saludables',

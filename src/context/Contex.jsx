@@ -61,9 +61,6 @@ export const ShoppingCartProvider = ({ children }) => {
         return items?.filter(item => item.category.toLowerCase().includes(searchByCategory.toLowerCase()))
     }
 
-
-
-
     useEffect(() => {
         const filteredBy = (searchType, items, searchByTitle, searchByCategory) => {
             if (searchType === 'BY_TITLE') {

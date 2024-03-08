@@ -51,7 +51,7 @@ export const Card = ({ item }) => {
                 <span className='absolute bottom-0 left-0 bg-white/60 rounded-lg text-black text-xs m-2 px-3 py-0.5 flex justify-center items-center'>
                     {category}
                 </span>
-                <img src={images[0]} alt={`image ${title}`} className='w-full h-full object-contain rounded-lg' />
+                <img src={images} alt={`image ${title}`} className='w-full h-full object-contain rounded-lg' />
             </figure>
             <p className='flex justify-between px-1'>
                 <span className='text-sm font-light'>
