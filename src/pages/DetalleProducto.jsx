@@ -46,22 +46,9 @@ export const DetalleProducto = () => {
                                     :
                                     <img className='w-full h-60 object-contain' src={context.showProductDetail.images} alt={`Image ${context.showProductDetail.title}`} />
                             }
-                            <div className='flex flex-row justify-between w-4/12 mt-2'>
-                                <img className='border  mb-2 object-contain h-20 mr-2' src={context.showProductDetail.images} alt={`Image ${context.showProductDetail.title}`} onClick={() => cambiarImagen(context.showProductDetail.images)} />
-                                <img className='border  mb-2 object-contain h-20 mr-2' src={context.showProductDetail.images[1]} alt={`Image ${context.showProductDetail.title}`} onClick={() => cambiarImagen(context.showProductDetail.images[1])} />
-                                <img className='border mb-2 object-cover h-20' src={context.showProductDetail.images[2]} alt={`Image ${context.showProductDetail.title}`} onClick={() => cambiarImagen(context.showProductDetail.images[2])} />
-                            </div>
                         </figure>
-
                         <div className='w-3/6 px-8'>
                             <h1 className='text-black mb-5 font-bold text-4xl'>{context.showProductDetail.title}</h1>
-                            <div className='flex flex-row mb-5'>
-                                <p className={context.showProductDetail.rate >= 1 ? 'good' : 'bad'}><StarIcon /></p>
-                                <p className={context.showProductDetail.rate >= 2 ? 'good' : 'bad'}><StarIcon /></p>
-                                <p className={context.showProductDetail.rate >= 3 ? 'good' : 'bad'}><StarIcon /></p>
-                                <p className={context.showProductDetail.rate >= 4 ? 'good' : 'bad'}><StarIcon /></p>
-                                <p className={context.showProductDetail.rate >= 5 ? 'good' : 'bad'}><StarIcon /></p>
-                            </div>
                             <div className='flex flex-row justify-between'>
                                 <div>
                                     <p>Marca: <span className='font-semibold'>{context.showProductDetail.brand}</span></p>
@@ -90,9 +77,7 @@ export const DetalleProducto = () => {
                             <button type='button'></button>
                         </div>
                     </div>
-                    <figure>
-                        <img src={context.showProductDetail.banner} alt={`Banner ${context.showProductDetail.title}`} className='w-screen rounded-lg' />
-                    </figure>
+                   
                 </div>
             </Layout>
         </>
