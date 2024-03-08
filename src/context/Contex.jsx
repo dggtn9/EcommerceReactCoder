@@ -6,20 +6,19 @@ export const Context = createContext();
 
 export const ShoppingCartProvider = ({ children }) => {
 
-    // Items
+    
     const [items, setItems] = useState(products);
 
-    // Open/ Close detail
+   
     const [isProductDetailOpen, setIsProductDetailOpen] = useState(false);
     const openProductDetail = () => setIsProductDetailOpen(true);
     const closeProductDetail = () => setIsProductDetailOpen(false);
 
-    // Open/ Close checkout side menu
+    
     const [isCheckoutSideMenuOpen, setIsCheckoutSideMenuOpen] = useState(false);
     const openCheckoutSideMenu = () => setIsCheckoutSideMenuOpen(true);
     const closeCheckoutSideMenu = () => setIsCheckoutSideMenuOpen(false);
 
-    // Product detail
     const detailItem = localStorage.getItem('productDetail');
     const productDetail = detailItem ? JSON.parse(detailItem) : {};
 
@@ -37,7 +36,7 @@ export const ShoppingCartProvider = ({ children }) => {
         localStorage.setItem('comprarSaludable', JSON.stringify(cartProducts));
     }, [cartProducts]);
 
-    // Shopping cart: My order
+  
     const itemsOrder = localStorage.getItem('checkout');
     const resultOrders = itemsOrder ? JSON.parse(itemsOrder) : [];
 
@@ -46,19 +45,19 @@ export const ShoppingCartProvider = ({ children }) => {
         localStorage.setItem('checkout', JSON.stringify(order));
     }, [order]);
 
-    //Search flitered
+
     const [filteredItems, setFilteredItems] = useState(null);
 
-    // Search by title
+
     const [searchByTitle, setSearchByTitle] = useState(null);
     const filteredItemsByTitle = (items, searchByTitle) => {
         return items?.filter(item => item.title.toLowerCase().includes(searchByTitle.toLowerCase()))
     }
 
-    // Search by category
+  
     const [searchByCategory, setSearchByCategory] = useState(null);
     const filteredItemsByCategory = (items, searchByCategory) => {
-        //console.log(items)
+       
         return items?.filter(item => item.category.toLowerCase().includes(searchByCategory.toLowerCase()))
     }
 

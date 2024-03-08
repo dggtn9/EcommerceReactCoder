@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Context } from '../context';
-import { deliveryDate, today } from '../utils';
+import { fechaDeEntrega, today } from '../utils';
 import { Layout } from '../components';
 import { ChevronLeftIcon, StarIcon, ShoppingCartIcon } from '@heroicons/react/24/solid';
 import { GoToTop } from '../utils';
@@ -16,7 +16,7 @@ export const DetalleProducto = () => {
         navigate(-1);
     }
 
-    //Image Exchange
+
     const [imagen, setImagen] = useState(context.showProductDetail.images[0]);
     const cambiarImagen = (element) => {
         setImagen(element)
@@ -24,7 +24,7 @@ export const DetalleProducto = () => {
     useEffect(() => {
     }, [setImagen]);
 
-    // Agregar al carrito
+
     const addProductsToCart = (productData) => {
         context.setCartProducts([...context.cartProducts, productData]);
         context.openCheckoutSideMenu();
@@ -78,7 +78,7 @@ export const DetalleProducto = () => {
                         <div className='w-1/6'>
                             <span className='text-red-800 text-2xl'>${context.showProductDetail.price}</span>
                             <p>Envio gratis!</p>
-                            <p className='text-xs mb-4'>Llega entre <span className='font-bold'>{deliveryDate(today, 'dd/mm/yy', 5)} y el {deliveryDate(today, 'dd/mm/yy', 10)}</span></p>
+                            <p className='text-xs mb-4'>Llega entre <span className='font-bold'>{fechaDeEntrega(today, 'dd/mm/yy', 5)} y el {fechaDeEntrega(today, 'dd/mm/yy', 10)}</span></p>
 
                             <button
                                 type='button'

@@ -2,13 +2,13 @@
 export const useCreateDate = () => {
     const currentDate = new Date();
 
-    // Hours:
+    // Horas
     let hrs = currentDate.getHours();
-    // 12 hour time system:
+    // tiempo de 12 horas
     let amPm = hrs >= 12 ? "PM" : "AM";
     hrs = hrs % 12;
     hrs = hrs ? hrs : 12;
-    // Minutes:
+    // Minutos:
     let min = currentDate.getMinutes();
     min = min < 10 ? "0" + min : min;
 

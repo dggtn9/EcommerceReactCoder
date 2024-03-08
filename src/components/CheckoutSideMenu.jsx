@@ -5,12 +5,10 @@ import { Context } from '../context';
 import { OrderCard } from './OrderCard';
 import { totalPrice } from '../utils';
 import { useCreateDate } from '../hooks';
-import './styles.css';
 
 export const CheckoutSideMenu = () => {
 
     const context = useContext(Context);
-    //console.log(context.cartProducts);
 
     const date = useCreateDate();
 

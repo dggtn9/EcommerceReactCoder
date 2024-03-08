@@ -1,5 +1,4 @@
 import { StarIcon, XMarkIcon } from '@heroicons/react/24/solid';
-import './styles.css';
 import { useContext } from 'react';
 import { Context } from '../context';
 import { Link } from 'react-router-dom';
@@ -7,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const ProductDetail = () => {
 
     const context = useContext(Context);
-    //console.log(context.showProductDetail);
+    
 
     return (
         <aside

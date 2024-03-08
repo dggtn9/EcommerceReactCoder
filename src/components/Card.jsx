@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import { Context } from '../context';
 import { PlusIcon, CheckIcon } from '@heroicons/react/24/solid';
-import './styles.css'
 
 export const Card = ({ item }) => {
 

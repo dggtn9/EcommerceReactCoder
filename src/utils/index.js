@@ -1,3 +1,3 @@
-export * from './orcerCount';
-export * from './deliveryDate';
+export * from './SumatoriaTotal';
+export * from './fechaDeEntrega';
 export * from './GoToTop';
